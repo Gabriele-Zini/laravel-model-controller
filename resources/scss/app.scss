@@ -1,2 +1,30 @@
 @import "~bootstrap/scss/bootstrap";
 
+img {
+    max-width: 100%;
+    aspect-ratio: 1/1;
+}
+
+/* COMMON */
+
+span {
+    font-weight: bold;
+}
+
+
+/* HEADER */
+
+header {
+    min-height: 100px;
+    background-color: black;
+    color: white;
+}
+
+
+/* FOOTER */
+
+footer {
+    min-height: 100px;
+    background-color: black;
+    color: white;
+}
