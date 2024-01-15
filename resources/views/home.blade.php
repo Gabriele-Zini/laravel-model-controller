@@ -2,14 +2,14 @@
 
 @section('content')
     <div class="container my-5">
-        <div class="d-flex flex-wrap justify-content-between gap-5">
+        <div class="row justify-content-center gap-5">
             @foreach ($movies as $movie)
-                <div class="card col-12 col-md-6 col-lg-2">
-                    <img src="{{ $movie->image }}" alt="movie image">
-                    <div class="px-3 mt-3">
-                        <p><span>Title: </span>{{ $movie->original_title }}</p>
-                        <p><span>Rating: </span>{{ floor($movie->vote) }}</p>
-                        <p><span>Nationality: </span>{{ $movie->nationality }}</p>
+                <div class="card col col-12 col-md-5 col-lg-3 p-0">
+                    <img src="{{ $movie->image }}" class="card-img-top p-0" alt="...">
+                    <div class="card-body ms_card-body">
+                        <p class="card-text"><span>Title: </span>{{ $movie->original_title }}</p>
+                        <p class="card-text"><span>Rating: </span>{{ floor($movie->vote) }}</p>
+                        <p class="card-text"><span>Nationality: </span>{{ $movie->nationality }}</p>
                     </div>
                 </div>
             @endforeach
