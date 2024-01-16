@@ -2,10 +2,10 @@
 
 @section('content')
     <div class="container my-5">
-        <div class="row justify-content-start g-4">
+        <div class="row justify-content-center justify-content-lg-start g-4">
             @foreach ($movies as $movie)
-                <div class="col col-12 col-md-5 col-lg-3 ">
-                    <div class="card p-0">
+                <div class="col col-12 col-md-5 col-lg-3 d-flex">
+                    <div class="card p-0 align-self-stretch">
                         <img src="{{ $movie->image }}" class="card-img-top p-0" alt="...">
                         <div class="card-body ms_card-body">
                             <p class="card-text"><span>Title: </span>{{ $movie->original_title }}</p>
